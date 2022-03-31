@@ -1,2 +1,2 @@
-# egnitely-landing-page
+# Egnitely Website
 Landing page of Egnitley
