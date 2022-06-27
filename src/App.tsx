@@ -64,10 +64,7 @@ function App() {
               for knowledge workers
             </div>
             <div className="text-block-6">
-              Open Links/Apps, Execute Scripts &amp; Trigger functions
-              seamlessly <br />
-              from our command bar interface to automate your life/business
-              workflows.
+            Looking to save time and automate your workflows? <br/> Our command bar interface lets you open links and apps, execute scripts and<br/> trigger automations seamlessly - so you can focus on what's important.
             </div>
           </div>
           <div>
@@ -114,9 +111,7 @@ function App() {
                   <div className="div-block-19">
                     <div className="text-block-8">Open Links &amp; Apps</div>
                     <div className="text-block-9">
-                      Open links to important documents and apps right from
-                      Egnitely command bar without wasting time looking for
-                      them.
+                      Egnitely helps you get things done faster by giving you quick access to the documents and apps you need, right from the command bar. No more wasted time searching for the things you need!
                     </div>
                   </div>
                 </div>
@@ -132,9 +127,7 @@ function App() {
                   <div className="div-block-19">
                     <div className="text-block-8">Execute Scripts</div>
                     <div className="text-block-9">
-                      Automate common tasks &amp; workflows in your operating
-                      system by writing shell scripts and executing them
-                      whenever required.
+                    Automate common tasks and workflows in your operating system through shell scripting. Scripts can be executed whenever required, making it easy to automate repetitive or complex tasks.
                     </div>
                   </div>
                 </div>
@@ -150,8 +143,7 @@ function App() {
                   <div className="div-block-19">
                     <div className="text-block-8">Trigger Functions</div>
                     <div className="text-block-9">
-                      Automate complex tasks/workflows by writing code or using
-                      community made functions from the Egnitely Marketplace.
+                    Egnitely Functions let you automate complex tasks and business workflows. Functions are the building blocks of Egnitely, each one solving a specific problem or automating a workflow.
                     </div>
                   </div>
                 </div>
@@ -164,11 +156,7 @@ function App() {
                     Function Marketplace
                   </div>
                   <div className="text-block-9">
-                    Functions are building bocks of Egnitely, each function
-                    solves a unit of problem or automates a specific workflow.
-                    Egnitely Marketplace is a collection of those functions
-                    built by our internal team and the partner/developer
-                    community.
+                  Egnitely Marketplace is a platform for functions built by our internal team and the partner/developer community. Functions are the building blocks of Egnitely, each one solving a unit of problem or automating a specific workflow. The Egnitely Marketplace allows easy accessibility and sharing of these solutions so that everyone can benefit from the power of automation.
                   </div>
                 </div>
               </div>
@@ -178,11 +166,7 @@ function App() {
                     Automation Services
                   </div>
                   <div className="text-block-9">
-                    We also provide function development services to our
-                    customers who need help developing functions for their
-                    specific workflows. We assign competent automations
-                    engineers who work with these companies to build and
-                    automate their business workflows.
+                  We provide function development services to help businesses automate their workflows. Our engineers are experts in automation and will work with you to develop the perfect solution for your company's needs. With our help, you can streamline your workflow and improve efficiency. Contact us today to learn more about how we can help you!.
                   </div>
                 </div>
               </div>
