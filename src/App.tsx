@@ -39,13 +39,13 @@ function App() {
                 </a>
               </div>
               <div className="div-block-7">
-                <a href="#" className="link-block w-inline-block">
+                <a href="https://forms.gle/ZKcBjKPw4Eb4FDYh8" target={"_blank"} className="link-block w-inline-block">
                   <div className="text-block-4">Request Functions</div>
                 </a>
               </div>
             </div>
             <div className="div-block-4">
-              <a href="#" className="button nav-button w-button">
+              <a href="https://forms.gle/iuHhVyCPcRj8y9m86" target={"_blank"} className="button nav-button w-button">
                 Join our Waitlist
               </a>
             </div>
@@ -72,7 +72,7 @@ function App() {
           </div>
           <div>
             <div className="div-block-10">
-              <a href="#" className="button header-button w-button">
+              <a href="https://forms.gle/iuHhVyCPcRj8y9m86" target={"_blank"} className="button header-button w-button">
                 Join our Waitlist<strong></strong>
               </a>
               <a
