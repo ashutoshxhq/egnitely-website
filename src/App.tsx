@@ -1,4 +1,3 @@
-import { useState } from "react";
 // @ts-ignore
 import HttpsRedirect from "react-https-redirect";
 
