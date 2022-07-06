@@ -270,8 +270,6 @@ function App() {
                 </div>
                 <div className="text-block-15">
                   Email: support@egnitely.com
-                  <br />
-                  Phone: +91 6207689508
                 </div>
               </div>
               <div className="footer-content">
