@@ -5,7 +5,11 @@ const Header = () => {
   return (
     <div className="div-block-5">
       <div className="div-block">
-        <div className="div-block-2"><img src="/egnitely.svg" loading="lazy" width="100" alt="Egnitely" className="image" /></div>
+        <div className="div-block-2">
+          <Link to="/">
+            <img src="/egnitely.svg" loading="lazy" width="100" alt="Egnitely" className="image" />
+          </Link>
+        </div>
         <div className="div-block-4">
           <NavLink to="/" aria-current="page" className={({ isActive }) => isActive ? "button-2 active-nav-tem w-button" : "button-2 w-button"}>Home</NavLink>
           <NavLink to="/community" className={({ isActive }) => isActive ? "button-2 active-nav-tem w-button" : "button-2 w-button"}>Community</NavLink>
