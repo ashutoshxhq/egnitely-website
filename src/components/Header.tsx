@@ -1,10 +1,10 @@
 import { useAuth0 } from '@auth0/auth0-react'
-import { Avatar, Box, Text } from '@chakra-ui/react';
-import React from 'react'
+import { Avatar, Box, Button, Menu, MenuButton, MenuDivider, MenuItem, MenuList, Text, Link as Anchor } from '@chakra-ui/react';
+import { FiChevronDown } from "react-icons/fi";
 import { Link, NavLink } from 'react-router-dom'
 
 const Header = () => {
-  const { loginWithRedirect, isAuthenticated, user } = useAuth0();
+  const { loginWithRedirect, isAuthenticated, user, logout } = useAuth0();
   console.log(isAuthenticated, user)
   return (
     <div className="div-block-5">
@@ -21,10 +21,22 @@ const Header = () => {
         </div>
         {isAuthenticated ? (
           <>
-          <Box display={"flex"} justifyContent="space-between" alignItems={"center"} gap={4}>
-            <Avatar size='sm' name={user?.nickname} />
-            <Text color={"white"} fontFamily="Poppins" fontSize={"lg"}>Hi' {user?.nickname}</Text>
-          </Box>
+            <Menu>
+              <MenuButton as={Box}>
+                <Box display={"flex"} justifyContent="space-between" alignItems={"center"} gap={2}>
+                  <Avatar size='sm' name={user?.nickname} mr={2} />
+                  <Text color={"white"} fontFamily="Poppins" fontSize={"lg"}>Hi' {user?.nickname}</Text>
+                  <FiChevronDown />
+                </Box>
+              </MenuButton>
+              <MenuList backgroundColor={"#1c1c1c"}>
+                <MenuItem onClick={() => {window.open("https://docs.egnitely.com", "_blank")}} >Documentation</MenuItem>
+                <MenuItem as={Link} to="/support">Help & Support</MenuItem>
+                <MenuDivider />
+                <MenuItem onClick={() => logout({ returnTo: window.location.origin })}>Logout</MenuItem>
+              </MenuList>
+            </Menu>
+
           </>
         ) : <div className="div-block-3">
           {/* <a href="#" className="button-2 hidden w-button">Contact</a> */}

@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Register from "./pages/Register";
+import Support from "./pages/Support";
 import TermsOfService from "./pages/TermsOfService";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="register" element={<Register />} />
             <Route path="community" element={<Community />} />
             <Route path="changelog" element={<ChangeLog />} />
+            <Route path="support" element={<Support />} />
             <Route path="privacy-policy" element={<PrivacyPolicy />} />
             <Route path="terms-of-service" element={<TermsOfService />} />
           </Route>
