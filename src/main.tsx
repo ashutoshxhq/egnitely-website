@@ -13,6 +13,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         domain="dev-qgdysq-r.us.auth0.com"
         clientId="8QBsWM8EwrQG0CxmKJoziLR1BRgZxYYi"
         redirectUri={window.location.origin}
+        useRefreshTokens
+        cacheLocation="localstorage"
+        scope="read:current_user update:current_user_metadata"
       >
         <ChakraProvider>
           <App />
