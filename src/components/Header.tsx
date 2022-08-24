@@ -1,7 +1,10 @@
+import { useAuth0 } from '@auth0/auth0-react'
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 const Header = () => {
+  const { loginWithRedirect } = useAuth0();
+
   return (
     <div className="div-block-5">
       <div className="div-block">
@@ -17,8 +20,13 @@ const Header = () => {
         </div>
         <div className="div-block-3">
           {/* <a href="#" className="button-2 hidden w-button">Contact</a> */}
-          <Link to="/login" className="button-2 w-button">Login</Link>
-          <Link to="/register" className="button w-button">Sign Up</Link>
+          <span onClick={() => loginWithRedirect({
+            screen_hint: "login"
+          })} className="button-2 w-button">Login</span>
+          
+          <span onClick={() => loginWithRedirect({
+            screen_hint: "signup"
+          })} className="button w-button">Sign Up</span>
         </div>
       </div>
     </div>
