@@ -1,8 +1,9 @@
+import { useAuth0 } from '@auth0/auth0-react';
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
 
 const Home = () => {
-
+    const { loginWithRedirect} = useAuth0();
     useEffect(() => {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
@@ -17,7 +18,7 @@ const Home = () => {
                         <div className="text-block">Collaborate.</div>
                         <div className="text-block">Deploy.</div>
                     </div>
-                    <div className="div-block-8"><Link to="/register" className="button-3 w-button">Start Building</Link><a href="#" className="button-3 btn-brand w-button">Download App</a></div>
+                    <div className="div-block-8"><span onClick={() => loginWithRedirect({screen_hint: "signup"})} className="button-3 w-button">Start Building</span><a href="#" className="button-3 btn-brand w-button">Download App</a></div>
                     <div>
                         <div className="text-block-2">Egnitely helps engineering teams to develop and deploy scalable backend applications faster and cheaper.<br />Our function marketplace helps cut development cost and empowers your team to ship faster.</div>
                     </div>
@@ -142,7 +143,7 @@ const Home = () => {
             <div className="div-block-47">
                 <div className="div-block-30">
                     <div className="text-block-19">Ready to try the Egnitely way?</div>
-                    <div className="div-block-46"><Link to="/register" className="button-3 w-button">Register Now</Link><a href="#" className="button-3 btn-brand w-button">Download App</a></div>
+                    <div className="div-block-46"><span onClick={() => loginWithRedirect({screen_hint: "signup"})} className="button-3 w-button">Register Now</span><a href="#" className="button-3 btn-brand w-button">Download App</a></div>
                 </div>
             </div>
         </>
