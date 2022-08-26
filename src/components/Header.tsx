@@ -30,7 +30,7 @@ const Header = () => {
                 </Box>
               </MenuButton>
               <MenuList backgroundColor={"#1c1c1c"}>
-                <MenuItem onClick={() => {window.open("https://docs.egnitely.com", "_blank")}} >Documentation</MenuItem>
+                <MenuItem onClick={() => {window.open("https://developer.egnitely.com", "_blank")}} >Developers</MenuItem>
                 <MenuItem as={Link} to="/support">Help & Support</MenuItem>
                 <MenuDivider />
                 <MenuItem onClick={() => logout({ returnTo: window.location.origin })}>Logout</MenuItem>

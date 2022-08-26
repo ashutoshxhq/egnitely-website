@@ -18,8 +18,8 @@ const Footer = () => {
                 <div className="div-block-34">
                     <div className="text-block-16">Resources</div>
                     <a href="#" target={"_blank"} className="link">Desktop App</a>
-                    <a href="https://docs.egnitely.com" target={"_blank"} className="link">Documentation</a>
-                    <a href="https://github.com/egnitely" target={"_blank"} className="link">Github Organization</a>
+                    <a href="https://developer.egnitely.com" target={"_blank"} className="link">Developers</a>
+                    <a href="https://github.com/egnitely" target={"_blank"} className="link">Github Org</a>
                 </div>
                 <div className="div-block-36">
                     <div className="text-block-16">Legal</div>
