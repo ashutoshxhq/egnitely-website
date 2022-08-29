@@ -1,6 +1,6 @@
 // @ts-ignore
 import HttpsRedirect from "react-https-redirect";
-import { Routes, Route, Link, Outlet } from "react-router-dom";
+import { Routes, Route, Outlet } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ChangeLog from "./pages/ChangeLog";
