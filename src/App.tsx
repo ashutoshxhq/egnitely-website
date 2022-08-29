@@ -1,6 +1,6 @@
 // @ts-ignore
 import HttpsRedirect from "react-https-redirect";
-import { Routes, Route, Outlet } from "react-router-dom";
+import { Routes, Route, Link, Outlet } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ChangeLog from "./pages/ChangeLog";
@@ -16,8 +16,9 @@ function App() {
   return (
     <>
       <HttpsRedirect>
+
         <Routes>
-          <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Layout />} >
             <Route index element={<Home />} />
             <Route path="login" element={<Login />} />
             <Route path="register" element={<Register />} />
@@ -28,10 +29,12 @@ function App() {
             <Route path="terms-of-service" element={<TermsOfService />} />
           </Route>
         </Routes>
+
       </HttpsRedirect>
     </>
   );
 }
+
 
 function Layout() {
   return (
@@ -40,6 +43,6 @@ function Layout() {
       <Outlet />
       <Footer />
     </>
-  );
+  )
 }
 export default App;
