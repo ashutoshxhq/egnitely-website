@@ -1,0 +1,37 @@
+name: Deploy to S3
+on:
+  push:
+    branches:
+      - main
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      CI: false
+      REACT_APP_BACKEND_URL: https://dev.api.egnitely.com
+      REACT_APP_FRONTEND_URL: https://egnitely.com
+      REACT_APP_AUTH0_CLIENT_ID: 8QBsWM8EwrQG0CxmKJoziLR1BRgZxYYi
+      REACT_APP_AUTH0_DOMAIN: dev-qgdysq-r.us.auth0.com
+      REACT_APP_AUTH0_AUDIENCE: https://dev.api.egnitely.com
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy
+        uses: reggionick/s3-deploy@v3
+        with:
+          folder: dist
+          bucket: egnitely.com
+          bucket-region: ap-south-1
+          dist-id: E2EFC9NLSXKBZ3
+          invalidation: /*
+          delete-removed: true
+          no-cache: true
+          private: true

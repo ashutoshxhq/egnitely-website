@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { Auth0Provider } from '@auth0/auth0-react';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 
@@ -15,7 +15,7 @@ const theme = extendTheme({ config })
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <HashRouter>
+    <BrowserRouter>
       <Auth0Provider
         domain="dev-qgdysq-r.us.auth0.com"
         clientId="8QBsWM8EwrQG0CxmKJoziLR1BRgZxYYi"
@@ -28,6 +28,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           <App />
         </ChakraProvider>
       </Auth0Provider>
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>
 )

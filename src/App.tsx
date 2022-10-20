@@ -7,6 +7,7 @@ import ChangeLog from "./pages/ChangeLog";
 import Community from "./pages/Community";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import { Marketplace } from "./pages/Marketplace";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Register from "./pages/Register";
 import Support from "./pages/Support";
@@ -25,6 +26,7 @@ function App() {
             <Route path="community" element={<Community />} />
             <Route path="changelog" element={<ChangeLog />} />
             <Route path="support" element={<Support />} />
+            <Route path="marketplace" element={<Marketplace />} />
             <Route path="privacy-policy" element={<PrivacyPolicy />} />
             <Route path="terms-of-service" element={<TermsOfService />} />
           </Route>
