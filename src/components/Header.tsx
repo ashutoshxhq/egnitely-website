@@ -31,7 +31,7 @@ const Header = () => {
               <Menu>
                 <MenuButton as={Box}>
                   <Box display={"flex"} justifyContent="space-between" alignItems={"center"} gap={1}>
-                    <Avatar size='sm' name={user?.nickname} mr={2} />
+                    <Avatar size='sm' name={user?.given_name || user?.nickname} mr={2} />
                     {/* <Text color={"white"} fontFamily="Poppins" fontSize={"lg"}>Hi' {user?.nickname}</Text> */}
                     {/* <FiChevronDown /> */}
                   </Box>
