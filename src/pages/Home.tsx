@@ -19,7 +19,7 @@ const Home = () => {
                         <div className="text-block">Deploy.</div>
                     </div>
                     <div className="div-block-8">
-                        {isAuthenticated ? <a href="https://app.egnitely.com" target={"_blank"} className="button-3 w-button">Go to Console</a> : <span onClick={() => loginWithRedirect({ screen_hint: "signup" })} className="button-3 w-button">Register Now</span>}
+                        {isAuthenticated ? <a href="https://app.egnitely.com" className="button-3 w-button">Go to Console</a> : <span onClick={() => loginWithRedirect({ screen_hint: "signup" })} className="button-3 w-button">Register Now</span>}
 
                         <a href="https://developer.egnitely.com" target={"_blank"} className="button-3 btn-brand w-button">Read Documentation</a>
                     </div>
@@ -148,7 +148,7 @@ const Home = () => {
                 <div className="div-block-30">
                     <div className="text-block-19">Ready to try the Egnitely way?</div>
                     <div className="div-block-46">
-                        {isAuthenticated ? <a href="https://app.egnitely.com" target={"_blank"} className="button-3 w-button">Go to Console</a> : <span onClick={() => loginWithRedirect({ screen_hint: "signup" })} className="button-3 w-button">Register Now</span>}
+                        {isAuthenticated ? <a href="https://app.egnitely.com" className="button-3 w-button">Go to Console</a> : <span onClick={() => loginWithRedirect({ screen_hint: "signup" })} className="button-3 w-button">Register Now</span>}
                         <a href="https://developer.egnitely.com" target={"_blank"} className="button-3 btn-brand w-button">Read Documentation</a>
                     </div>
                 </div>

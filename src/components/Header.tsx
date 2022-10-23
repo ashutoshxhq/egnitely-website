@@ -5,7 +5,6 @@ import { Link, NavLink } from 'react-router-dom'
 
 const Header = () => {
   const { loginWithRedirect, isAuthenticated, user, logout } = useAuth0();
-  console.log(isAuthenticated, user)
   return (
     <div className="div-block-5">
       <div className="div-block">
@@ -26,19 +25,19 @@ const Header = () => {
           <>
             <Box display="flex" justifyContent={"center"} alignItems={"center"} gap={4}>
               <Button onClick={() => {
-                window.open("https://app.egnitely.com/")
+                window.location.href = "https://app.egnitely.com/"
               }} colorScheme={"orange"}>Go to Console</Button>
               <Menu>
                 <MenuButton as={Box}>
                   <Box display={"flex"} justifyContent="space-between" alignItems={"center"} gap={1}>
-                    <Avatar size='sm' name={user?.given_name || user?.nickname} mr={2} />
+                    <Avatar size='sm' name={user?.name} mr={2} />
                     {/* <Text color={"white"} fontFamily="Poppins" fontSize={"lg"}>Hi' {user?.nickname}</Text> */}
                     {/* <FiChevronDown /> */}
                   </Box>
                 </MenuButton>
                 <MenuList backgroundColor={"#1c1c1c"}>
-                  <MenuItem onClick={() => { window.open("https://app.egnitely.com/settings") }} >User Profile</MenuItem>
-                  <MenuItem onClick={() => { window.open("https://app.egnitely.com/projects") }} >Projects</MenuItem>
+                  <MenuItem onClick={() => { window.location.href = "https://app.egnitely.com/settings" }} >User Profile</MenuItem>
+                  <MenuItem onClick={() => { window.location.href = "https://app.egnitely.com/projects" }} >Projects</MenuItem>
                   <MenuDivider />
                   <MenuItem onClick={() => { window.open("https://developer.egnitely.com", "_blank") }} >Developers</MenuItem>
                   <MenuItem as={Link} to="/support">Help & Support</MenuItem>
