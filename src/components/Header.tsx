@@ -19,13 +19,15 @@ const Header = () => {
           <NavLink to="/community" className={({ isActive }) => isActive ? "button-2 active-nav-tem w-button" : "button-2 w-button"}>Community</NavLink>
           <NavLink to="/marketplace" className={({ isActive }) => isActive ? "button-2 active-nav-tem w-button" : "button-2 w-button"}>Marketplace</NavLink>
           <NavLink to="/support" className={({ isActive }) => isActive ? "button-2 active-nav-tem w-button" : "button-2 w-button"}>Support</NavLink>
-          <Anchor color={"subtle"} display="flex" justifyContent={"center"} alignItems={"center"} gap={2} href="https://developer.egnitely.com" target={"_blank"} className={"button-2 w-button"}>Developer & Docs <FiExternalLink/></Anchor>
+          <Anchor color={"subtle"} display="flex" justifyContent={"center"} alignItems={"center"} gap={2} href="https://developer.egnitely.com" target={"_blank"} className={"button-2 w-button"}>Developer & Docs <FiExternalLink /></Anchor>
           {/* <a href="#" className="button-2 hidden w-button">Marketplace</a><a href="community.html" className="button-2 w-button">Community</a> */}
         </div>
         {isAuthenticated ? (
           <>
             <Box display="flex" justifyContent={"center"} alignItems={"center"} gap={4}>
-              <Button colorScheme={"orange"}>Go to Console</Button>
+              <Button onClick={() => {
+                window.open("https://app.egnitely.com/")
+              }} colorScheme={"orange"}>Go to Console</Button>
               <Menu>
                 <MenuButton as={Box}>
                   <Box display={"flex"} justifyContent="space-between" alignItems={"center"} gap={1}>
@@ -35,7 +37,7 @@ const Header = () => {
                   </Box>
                 </MenuButton>
                 <MenuList backgroundColor={"#1c1c1c"}>
-                  <MenuItem onClick={() => { window.open("https://app.egnitely.com/settings/account") }} >User Profile</MenuItem>
+                  <MenuItem onClick={() => { window.open("https://app.egnitely.com/settings") }} >User Profile</MenuItem>
                   <MenuItem onClick={() => { window.open("https://app.egnitely.com/projects") }} >Projects</MenuItem>
                   <MenuDivider />
                   <MenuItem onClick={() => { window.open("https://developer.egnitely.com", "_blank") }} >Developers</MenuItem>
